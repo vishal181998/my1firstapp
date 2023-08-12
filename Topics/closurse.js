@@ -3,19 +3,6 @@
 // In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, 
 // closures are created every time a function is created, at function creation time.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function createCounter() {
 //     let count = 0; // This variable is private to the outer function but accessible to inner functions
   
