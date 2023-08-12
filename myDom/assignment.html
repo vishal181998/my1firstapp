@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Food blog</h1>
+    <h3 id = "about">  About Blogger</h3>
+    <p>
+       <Span> A food blogger is an individual who shares their passion for food through an online platform</Span>
+        <span>typically a blog or social media channels.They curate and create engaging content, such as recipes</Span>
+        <span>food reviews, cooking tips, and stunning food photography, to inspire and captivate their audience </Span>
+    </p>
+    <div  class="food ">
+        <h3> Food varity</h3>
+        <ul>
+            <li>india </li>
+            <li>chinese</li>
+        </ul>
+    </div>
+    <div class="menu">
+      <h2>inidan</h2>
+      <p>A food blogger is an individual who shares their passion for food through an online platform</p>
+      <h2>chinese</h2>
+      <p>A food blogger is an individual who shares their passion for food through an online platform</p>
+      <h2>south inidan</h2>
+      <p>A food blogger is an individual who shares their passion for food through an online platform</p>
+      <h2>sea</h2>
+      <p>A food blogger is an individual who shares their passion for food through an online platform</p>
+    </div>
+    <script >
+        //head
+        let head = document.getElementById("head")
+        head.style.color="blue";
+        setTimeout(() => {
+            head.style.color = "red"
+        }, 2000);
+        //about
+        let about = document.getElementById("about")
+        about.style.color="green";
+        setTimeout(() => {
+            about.style.fontFamily = "Arial";
+            about.style.color = "red"
+        }, 2000);
+        //paragrap
+        let para =  document.getElementsByTagName("span");
+        para[0].style.color = "crimson"
+        para[1].style.color = "pink"
+        setTimeout(() => {
+            about.style.fontFamily = "Arial";
+            about.style.color = "red"
+        }, 2000);
+         const foodDiv = document.querySelector(".food");
+        const h3Element = foodDiv.querySelector("h3");
+        const liElements = foodDiv.querySelectorAll("li");
+
+        h3Element.style.fontSize = "13px";
+        h3Element.style.color = "orange";
+
+        liElements.forEach(li => {
+            li.style.fontSize = "13px";
+            li.style.color = "orange";
+        });
+        
+        const menuDiv = document.getElementsByClassName("menu")[0];
+        const paragraphs = menuDiv.getElementsByTagName("p");
+
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.color = "red"; 
+        }
+
+        paragraphs[1].style.color = "grey";
+        paragraphs[1].style.fontSize = "15px";
+
+        paragraphs[3].style.color = "grey"; 
+        paragraphs[3].style.fontSize = "15px";
+
+
+      
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" style="background-color: rgba(214, 156, 84, 0);">help</button>
+    <input type="text">
+    <article id="art" style="border: rgb(174, 18, 18);">herae</article>
+</body>
+<script>
+    let x=["red","blue","green"]
+//     for(let i in x){
+//     setTimeout(() => {
+//     document.body.style.background = x[i]
+//     console.log(i)
+//   },i* 3000*i);
+// }
+
+// let inn=document.getElementsByTagName("input");
+// inn.addEventListener('keypas',()=>{
+//     inn.style.background="red"
+// })
+// let arti=document.getElementById("art")
+// arti.addEventListener('click',()=>{
+//     arti.style.border = '1px solid blue'
+// })
+// let bt= document.getElementById("btn")   
+// bt.textContent="baaa"
+// var a=1;
+// var b=0;
+// while(a<=3){
+
+// }
+
+bt.addEventListener('click',()=>{
+    if(document.body.style.background=="red"){
+        document.body.style.background = "blue"
+    }else{
+        document.body.style.background = "red"
+    }  
+   // console.log( document.body.style.background)
+});
+</script>
+</html>
